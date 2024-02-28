@@ -141,9 +141,6 @@ app.post("/register", async (req, res) => {
   }
 });
 
-//TODO: Create the post route for submit.
-//Handle the submitted data and add it to the database
-
 app.post("/submit", async (req, res) =>{
   if (req.isAuthenticated()) {
     const email = req.user.email;
